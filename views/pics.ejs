@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Pictures Page</h1>
+    
+    <% for(var i=0;i<mypics.length;i++){    %>
+        <div style="display: inline-block; border: 5px solid saddlebrown; height: 450px; width: 350px; position: relative;">
+    <img src="<%= mypics[i].urls.small%>" alt="" style="height: 400px;  width: 330px; top: 9px; left: 14px; position: absolute;">
+    <h4 style="top: 410px; left: 5px; position: absolute;">Created at: <%=   mypics[0].created_at%></h4>
+</div>
+    <% } %>
+</body>
+</html>
